@@ -8,7 +8,16 @@ public class Main {
         dancerList.add(new ElectricBoogieDancer());
         dancerList.add(new BreakDancer());
 
-        for (Dancer dancer : dancerList) {
+        for (int i = 0; i < dancerList.size(); i++) {
+            var dancer = dancerList.get(i);
+
+            if (dancer instanceof ElectricBoogieDancer) {
+                System.out.println("Dancer number " + i + " is an electric boogie dancer");
+            }
+            else if (dancer instanceof BreakDancer) {
+                System.out.println("Dancer number " + i + " is a breakdancer!");
+            }
+
             dancer.dance();
         }
     }

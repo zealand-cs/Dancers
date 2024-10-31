@@ -9,12 +9,14 @@ public class Dancer {
 }
 
 class ElectricBoogieDancer extends Dancer {
+    @Override
     public void dance() {
         System.out.println("The dancers dance is electrifying!");
     }
 }
 
 class BreakDancer extends Dancer {
+    @Override
     public void dance() {
         System.out.println("The dancer breaks!");
     }
